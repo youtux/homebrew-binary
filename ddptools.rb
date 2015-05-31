@@ -2,8 +2,8 @@ require 'formula'
 
 class Ddptools < Formula
   homepage 'http://ddp.andreasruge.de'
-  url 'http://ddp.andreasruge.de/dist/ddptools-0.8.7a-osx.tar.gz'
-  sha1 'ff062d302d55ee2880b957f6e802b0b503d3ead9'
+  url 'http://ddp.andreasruge.de/dist/ddptools-0.8.8-osx.tar.gz'
+  sha1 '1114f57814f42b88686f2ffb147989906e472524'
 
   def install
     bin.install 'ddpinfo', 'cue2ddp', 'cdtinfo'
