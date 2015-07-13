@@ -1,4 +1,5 @@
 class PerforceServer < Formula
+  desc "Server for the Perforce revision control system"
   homepage "http://www.perforce.com/"
   version "2015.1.1171507"
 

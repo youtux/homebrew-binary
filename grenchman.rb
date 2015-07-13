@@ -1,4 +1,5 @@
 class Grenchman < Formula
+  desc "fast invocation of Clojure code over nREPL"
   homepage "http://leiningen.org/grench.html"
   url "https://technomancy.github.io/grenchman/downloads/grench-0.2.0-mac"
   sha256 "f70542dffc1f60e372b77582998570b02ff21c85f699fd1854c98e4359804bb6"

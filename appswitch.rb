@@ -1,6 +1,5 @@
-require "formula"
-
 class Appswitch < Formula
+  desc "command-line interface to OS X process management"
   homepage "http://web.sabi.net/nriley/software/"
   url "http://web.sabi.net/nriley/software/appswitch-1.1.1.tar.gz"
   sha1 "df5535adadfcf219c60d28397b99627ae7be3148"

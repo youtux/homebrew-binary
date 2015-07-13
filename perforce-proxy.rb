@@ -1,4 +1,5 @@
 class PerforceProxy < Formula
+  desc "Proxy for Perforce applications"
   homepage "http://www.perforce.com/"
   version "2015.1.1028542"
 

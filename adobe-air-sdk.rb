@@ -1,5 +1,6 @@
 # Find downloads at: https://helpx.adobe.com/air/kb/archived-air-sdk-version.html
 class AdobeAirSdk < Formula
+  desc "SDK for Adobe Air"
   homepage "https://www.adobe.com/devnet/air/air-sdk-download.html"
   url "http://airdownload.adobe.com/air/mac/download/18.0/AIRSDK_Compiler.tbz2"
   version "18.0.0.180"

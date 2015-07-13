@@ -1,6 +1,5 @@
-require 'formula'
-
 class Grads < Formula
+  desc "desktop tool to manipule earth science data"
   homepage 'http://www.iges.org/grads/grads.html'
   url 'ftp://cola.gmu.edu/grads/2.0/grads-2.0.2-bin-darwin9.8-intel.tar.gz'
   sha1 '0d42581c614ae627f4b53113c16c0695bd233362'

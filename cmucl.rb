@@ -1,6 +1,5 @@
-require 'formula'
-
 class Cmucl < Formula
+  desc "high-performance, free Common Lisp implementation"
   homepage 'http://www.cons.org/cmucl'
   url 'http://common-lisp.net/project/cmucl/downloads/release/20f/cmucl-20f-x86-darwin.tar.bz2'
   sha1 '40315a15ad996d64ef043080a7afd634959d3f40'

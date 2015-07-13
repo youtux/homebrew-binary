@@ -1,6 +1,5 @@
-require 'formula'
-
 class Ddptools < Formula
+  desc "command-line programs to read & write DDP images"
   homepage 'http://ddp.andreasruge.de'
   url 'http://ddp.andreasruge.de/dist/ddptools-0.8.8-osx.tar.gz'
   sha1 '1114f57814f42b88686f2ffb147989906e472524'

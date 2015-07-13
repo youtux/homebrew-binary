@@ -1,6 +1,5 @@
-require 'formula'
-
 class Rar < Formula
+  desc "archive manager for RAR/ZIP file formats"
   homepage 'http://www.rarlab.com'
   url 'http://www.rarlab.com/rar/rarosx-5.2.1.tar.gz'
   sha1 'ca5db7eb2797b47aff7f6e2d583aed4cddf235c8'
