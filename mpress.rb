@@ -22,6 +22,14 @@ class Mpress < Formula
   end
 
   test do
-    assert_match(/MACHO-MPRESS v#{version}$/, shell_output("#{bin}/mpress", 1))
+    test_program = <<-EOS.undent
+    #include <stdio.h>
+    int main() { puts("Hello world!"); }
+    EOS
+
+    (testpath/"test.c").write test_program
+    system ENV.cc, "test.c", "-arch", "i386", "-o", "test"
+    system "#{bin}/mpress", "test"
+    assert_match shell_output("./test").chomp, "Hello world!"
   end
 end
