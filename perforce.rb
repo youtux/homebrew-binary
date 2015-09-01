@@ -1,14 +1,14 @@
 class Perforce < Formula
   desc "Revision control system"
   homepage "http://www.perforce.com/"
-  version "2015.1.1204891"
+  version "2015.1.1227227"
 
   if MacOS.prefer_64_bit?
     url "http://filehost.perforce.com/perforce/r15.1/bin.macosx105x86_64/p4"
-    sha256 "5535ed8459f50ce6e79b36e039c5892e6d1794d9bb7876ac49f83904b5ea2404"
+    sha256 "a6d39a35f2be437e2fcbc28a5d0a6b520a584bc122a262c8a5f14cf1dd1811c9"
   else
     url "http://filehost.perforce.com/perforce/r15.1/bin.macosx105x86/p4"
-    sha256 "0b613ffd3a7bb898ac02cb7472e48e5f6fca6def533aa1bd75634ab56b22d061"
+    sha256 "66db5105d11ff34adc8cae73e9b04e5655001b710dbc373f7c6475dba4831acc"
   end
 
   def install
