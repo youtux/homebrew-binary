@@ -4,6 +4,8 @@ class Jsl < Formula
   url 'http://www.javascriptlint.com/download/jsl-0.3.0-mac.tar.gz'
   sha1 'a6dd106a05ee81130a27a49d29233afeb8796ab0'
 
+  bottle :unneeded
+
   def install
     bin.install 'jsl'
   end

@@ -8,6 +8,8 @@ class AdobeAirSdkFlex < Formula
 
   conflicts_with "adobe-air-sdk"
 
+  bottle :unneeded
+
   def install
     rm_f Dir["bin/*.bat"]
     libexec.install Dir["*"]

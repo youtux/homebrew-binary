@@ -7,6 +7,8 @@ class Grenchman < Formula
   depends_on :arch => :x86_64
   depends_on "libffi"
 
+  bottle :unneeded
+
   def install
     bin.install "grench-0.2.0-mac" => "grench"
   end

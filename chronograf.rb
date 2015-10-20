@@ -4,6 +4,8 @@ class Chronograf < Formula
   url "https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf-darwin_amd64-0.2.0.tar.gz"
   sha256 "abb41bb7e3c82a9c1468e1187b1b39f5a2b00eca3c8ac0371aab9e07fa34d2fb"
 
+  bottle :unneeded
+
   def install
     bin.install "chronograf-darwin_amd64-0.2.0" => "chronograf"
     etc.install "chronograf.toml"

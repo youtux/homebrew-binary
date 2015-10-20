@@ -5,6 +5,8 @@ class Jad < Formula
   sha1 '25bf73676eec21d4cf02f110cb7a06d37cb52f16'
   version '1.5.8g'
 
+  bottle :unneeded
+
   def install
     man1.install 'jad.1'
     libexec.install 'jad'

@@ -6,6 +6,8 @@ class Eventstore < Formula
 
   depends_on :macos => :mavericks
 
+  bottle :unneeded
+
   def install
     prefix.install Dir["*"]
 

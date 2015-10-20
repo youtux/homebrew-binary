@@ -10,6 +10,8 @@ class Grads < Formula
     sha1 'e1cd5f9c4fe8d6ed344a29ee00413aeb6323b7cd'
   end
 
+  bottle :unneeded
+
   def install
     rm 'bin/INSTALL'
     prefix.install 'bin/COPYRIGHT', 'bin'

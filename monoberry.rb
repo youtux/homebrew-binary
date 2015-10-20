@@ -4,6 +4,8 @@ class Monoberry < Formula
   url 'https://github.com/roblillack/monoberry/releases/download/0.2.0/monoberry-0.2.0.tgz'
   sha1 '223c886cc8ed79dd8e21c77760b78f659ede5b8c'
 
+  bottle :unneeded
+
   def install
     (share/'monoberry').install "target/lib", "target/target", "target/tool"
     (bin/'monoberry').write <<-EOS

@@ -4,6 +4,8 @@ class Subgit < Formula
   url "http://old.subgit.com/download/subgit-3.0.0.zip"
   sha256 "60e8859f57008262fc9af4e9913b85782797237ccbefd5d87a09f8f113b73d23"
 
+  bottle :unneeded
+
   def install
     inreplace "bin/subgit", 'TS_LIB="$BASEDIR"/lib', 'TS_LIB="$BASEDIR"/libexec'
     bin.install "bin/subgit"

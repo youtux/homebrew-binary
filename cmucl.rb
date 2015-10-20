@@ -6,6 +6,8 @@ class Cmucl < Formula
 
   skip_clean 'bin'
 
+  bottle :unneeded
+
   def install
     bin.install 'bin/lisp'
     lib.install 'lib/cmucl'

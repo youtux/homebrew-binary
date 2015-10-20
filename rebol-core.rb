@@ -9,6 +9,8 @@ class RebolCore < Formula
   depends_on :macos => :snow_leopard
   depends_on :arch => :intel
 
+  bottle :unneeded
+
   def install
     bin.install "rebol-core/rebol"
   end

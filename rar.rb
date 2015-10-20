@@ -9,6 +9,8 @@ class Rar < Formula
     sha1 'f3feaef47d7dfa5a3a8372153c743921ed3eda51'
   end
 
+  bottle :unneeded
+
   def install
     bin.install 'rar', 'unrar'
     lib.install 'default.sfx'

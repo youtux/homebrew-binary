@@ -11,6 +11,8 @@ class PerforceProxy < Formula
     sha256 "975282fdfe656d48795e066a977d47743a3cb1b57465dfb265179965182a46a8"
   end
 
+  bottle :unneeded
+
   def install
     bin.install "p4p"
     (var+"p4p").mkpath

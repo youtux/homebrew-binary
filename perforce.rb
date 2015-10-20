@@ -11,6 +11,8 @@ class Perforce < Formula
     sha256 "1ed8c05a842b34cc97d822219bc8a8ae5035e0a1b02f7588697d3f1f9271fe04"
   end
 
+  bottle :unneeded
+
   def install
     bin.install "p4"
   end

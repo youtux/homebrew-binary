@@ -11,6 +11,8 @@ class PerforceServer < Formula
     sha256 "0ecfd0510091232a53c24e426e1d48d460604ec3f9ea896d02736f93d151d5a5"
   end
 
+  bottle :unneeded
+
   def install
     bin.install "p4d"
     (var+"p4root").mkpath
