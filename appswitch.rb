@@ -2,7 +2,7 @@ class Appswitch < Formula
   desc "command-line interface to OS X process management"
   homepage "http://web.sabi.net/nriley/software/"
   url "http://web.sabi.net/nriley/software/appswitch-1.1.1.tar.gz"
-  sha1 "df5535adadfcf219c60d28397b99627ae7be3148"
+  sha256 "0e660b389bf0ad3aa5dcff2a5ca81a2f6b493abbddeb994f682f06c7e3663c0b"
 
   bottle :unneeded
 
