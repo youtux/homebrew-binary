@@ -1,17 +1,13 @@
 class Kindlegen < Formula
   desc "command-line tool to work on Kindle books"
-  homepage 'http://www.amazon.com/gp/feature.html?docId=1000765211'
-  url 'http://kindlegen.s3.amazonaws.com/KindleGen_Mac_i386_v2_9.zip'
-  sha1 'efa5ad0b05650f7f71543535ea2b232bb5fec571'
+  homepage "http://www.amazon.com/gp/feature.html?docId=1000765211"
+  url "http://kindlegen.s3.amazonaws.com/KindleGen_Mac_i386_v2_9.zip"
+  sha256 "7aad3b01c8f0d61096f86d7ba34e4deeef22355b9dbf2555c6dd05a281f5d17e"
 
   bottle :unneeded
 
   def install
-    bin.install 'kindlegen'
-  end
-
-  test do
-    system "#{bin}/kindlegen"
+    bin.install "kindlegen"
   end
 
   def caveats
@@ -22,5 +18,9 @@ class Kindlegen < Formula
       License information at:
       #{homepage}
     EOS
+  end
+
+  test do
+    system "#{bin}/kindlegen"
   end
 end
