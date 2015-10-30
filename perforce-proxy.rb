@@ -60,8 +60,8 @@ class PerforceProxy < Formula
     os_tag = (MacOS.prefer_64_bit? ? "P4P/DARWIN90X86_64" : "P4P/DARWIN90X86")
     (version_year, version_minor, version_build) = version.to_s.split(".")
     assert_match(
-      %r[#{os_tag}/#{version_year}\.#{version_minor}/#{version_build} ],
-      shell_output("#{bin}/p4p -V")
+      %r{#{os_tag}/#{version_year}\.#{version_minor}/#{version_build} },
+      shell_output("#{bin}/p4p -V"),
     )
   end
 end
