@@ -6,10 +6,10 @@ class RebolView < Formula
 
   conflicts_with "rebol-core", :because => "Only one of REBOL Core or View is currently supported"
 
+  bottle :unneeded
+
   depends_on :macos => :snow_leopard
   depends_on :arch => :intel
-
-  bottle :unneeded
 
   def install
     bin.install "rebol-view/rebol"
