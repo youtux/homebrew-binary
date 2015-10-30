@@ -1,20 +1,20 @@
 class Libspotify < Formula
   desc "C interface to Spotify"
-  homepage 'http://developer.spotify.com/en/libspotify/overview/'
-  url 'https://developer.spotify.com/download/libspotify/libspotify-12.1.51-Darwin-universal.zip'
-  sha1 '5a02b7af804661ebff0f4db01a85e91635de8fb3'
+  homepage "http://developer.spotify.com/en/libspotify/overview/"
+  url "https://developer.spotify.com/download/libspotify/libspotify-12.1.51-Darwin-universal.zip"
+  sha256 "80053f0779f6192a8052732904d88b91acc62a350831f6b585a3c6ac10cb8fbd"
 
   bottle :unneeded
 
   def install
-    (include+'libspotify').install "libspotify.framework/Versions/12.1.51/Headers/api.h"
+    (include/"libspotify").install "libspotify.framework/Versions/12.1.51/Headers/api.h"
     lib.install "libspotify.framework/Versions/12.1.51/libspotify" => "libspotify.12.1.51.dylib"
-    doc.install Dir['docs/*']
-    doc.install %w(ChangeLog README LICENSE licenses.xhtml examples)
-    man3.install Dir['man3/*']
+    doc.install Dir["docs/*"]
+    doc.install %w[licenses.xhtml examples]
+    man3.install Dir["man3/*"]
     lib.install_symlink "libspotify.12.1.51.dylib" => "libspotify.dylib"
     lib.install_symlink "libspotify.12.1.51.dylib" => "libspotify.12.dylib"
-    (lib+'pkgconfig/libspotify.pc').write pc_file
+    (lib/"pkgconfig/libspotify.pc").write pc_file
   end
 
   def pc_file; <<-EOS.undent
