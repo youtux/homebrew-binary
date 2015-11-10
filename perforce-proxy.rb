@@ -1,14 +1,14 @@
 class PerforceProxy < Formula
   desc "Proxy for Perforce applications"
   homepage "http://www.perforce.com/"
-  version "2015.1.1126382"
+  version "2015.2.1252060"
 
   if MacOS.prefer_64_bit?
-    url "http://filehost.perforce.com/perforce/r15.1/bin.darwin90x86_64/p4p"
-    sha256 "4b1d3187588f5f298607dd8a2fc26c6d95d2ef169e5c33b1a1515c22c549759a"
+    url "http://filehost.perforce.com/perforce/r15.2/bin.darwin90x86_64/p4p"
+    sha256 "f04604088b917cfbc932380f8cd205d7c508911d7cc98f00070d9d458e00101b"
   else
-    url "http://filehost.perforce.com/perforce/r15.1/bin.darwin90x86/p4p"
-    sha256 "975282fdfe656d48795e066a977d47743a3cb1b57465dfb265179965182a46a8"
+    url "http://filehost.perforce.com/perforce/r15.2/bin.darwin90x86/p4p"
+    sha256 "876d021cc69ac27dfeaf67db81f1cab110c708d1826c447fb73172eb8cb6ae8a"
   end
 
   bottle :unneeded
