@@ -1,8 +1,8 @@
 class Rar < Formula
   desc "archive manager for RAR/ZIP file formats"
   homepage "http://www.rarlab.com"
-  url "http://www.rarlab.com/rar/rarosx-5.2.1.tar.gz"
-  sha256 "78f023dc1ba1d95f5c2fb5b90c16f214c8bfd2973bf79d92b8a523d711a57065"
+  url "http://www.rarlab.com/rar/rarosx-5.3.0.tar.gz"
+  sha256 "1a2a4fc7a146a9847386d6e0165bf7bfc540a3d559b15c74d3be42d37c6409cf"
 
   bottle :unneeded
 
