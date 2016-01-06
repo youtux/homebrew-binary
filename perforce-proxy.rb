@@ -61,7 +61,6 @@ class PerforceProxy < Formula
     (version_year, version_minor, version_build) = version.to_s.split(".")
     assert_match(
       %r{#{os_tag}/#{version_year}\.#{version_minor}/#{version_build} },
-      shell_output("#{bin}/p4p -V"),
-    )
+      shell_output("#{bin}/p4p -V"))
   end
 end
