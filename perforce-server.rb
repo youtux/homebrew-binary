@@ -1,14 +1,14 @@
 class PerforceServer < Formula
   desc "Server for the Perforce revision control system"
   homepage "http://www.perforce.com/"
-  version "2015.1.1171507"
+  version "2015.1.1362963"
 
   if MacOS.prefer_64_bit?
     url "http://filehost.perforce.com/perforce/r15.1/bin.darwin90x86_64/p4d"
-    sha256 "b42758ebe7b54e672b513c34c88f399d0da7b4de1fd23b9f56d222a4f1f3bae5"
+    sha256 "b7fa407b1da501b65f8cac9058099712a9e578e9b94773a3f6078234ad210d5f"
   else
     url "http://filehost.perforce.com/perforce/r15.1/bin.darwin90x86/p4d"
-    sha256 "0ecfd0510091232a53c24e426e1d48d460604ec3f9ea896d02736f93d151d5a5"
+    sha256 "c15aa41ee5e77207ec9a2b3e027e346e27d60523b3c65cb6f74a5c1240898f21"
   end
 
   bottle :unneeded
