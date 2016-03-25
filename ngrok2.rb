@@ -13,8 +13,6 @@ class Ngrok2 < Formula
 
   bottle :unneeded
 
-  conflicts_with "ngrok", :because => "both provide `ngrok` binaries"
-
   def install
     bin.install "ngrok"
   end
