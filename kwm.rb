@@ -1,13 +1,15 @@
 class Kwm < Formula
   desc "Tiling window manager with focus follows mouse for OSX."
   homepage "https://koekeishiya.github.io/kwm/"
-  url "https://github.com/koekeishiya/kwm/releases/download/v1.1.5/Kwm-1.1.5.zip"
-  sha256 "c4cbf30c92ea9cf2ef2099608a7cbbf8a3c92d7ff0c6ec62b444656f07e74dc8"
+  url "https://github.com/koekeishiya/kwm/releases/download/v2.0.3/Kwm-2.0.3.zip"
+  sha256 "35c7278903fc922f89726c86b1091d55b961f738924da5eddada2025e4ae2bd6"
 
   def install
     bin.install "kwmc"
     prefix.install %w[kwm kwm-overlay kwmrc]
   end
+
+  plist_options :startup => true
 
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
