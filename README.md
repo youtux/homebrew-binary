@@ -13,4 +13,4 @@ brew install https://raw.githubusercontent.com/Homebrew/homebrew-binary/master/<
 ```
 
 ## Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme).
+`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/share/doc/homebrew#readme).
