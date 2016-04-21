@@ -1,14 +1,14 @@
 class Perforce < Formula
   desc "Revision control system"
   homepage "http://www.perforce.com/"
-  version "2015.2.1366233"
+  version "2016.1.1374211"
 
   if MacOS.prefer_64_bit?
-    url "https://www.perforce.com/downloads/perforce/r15.2/bin.macosx105x86_64/p4"
-    sha256 "740d1d1e7bb5d32199b296d1a5c8bbe049228a97bedb64d71e65248f9982e875"
+    url "https://www.perforce.com/downloads/perforce/r16.1/bin.macosx105x86_64/p4"
+    sha256 "69cc4edbb3f29ff56244f4f301c0d1903e09cfe89557c675e819808d4f85ffd1"
   else
-    url "https://www.perforce.com/downloads/perforce/r15.2/bin.macosx105x86/p4"
-    sha256 "4c08928e78b19091c3b858d4b4cc1feb49a73dd33fd083598bfb079453965274"
+    url "https://www.perforce.com/downloads/perforce/r16.1/bin.macosx105x86/p4"
+    sha256 "b2ad97092fbc75343f8b1bf0fe7eafa848841a67893634cf4421e356b9ad4dae"
   end
 
   bottle :unneeded
