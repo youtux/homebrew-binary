@@ -1,14 +1,14 @@
 class Ngrok2 < Formula
   desc "Secure tunnels to localhost"
   homepage "https://ngrok.com/"
-  version "2.0.25"
+  version "2.1.2"
 
   if MacOS.prefer_64_bit?
     url "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-#{version}-darwin-amd64.zip"
-    sha256 "62fb342cd1d177415a1b4dba1b40f542e25caa5ea119604981e474a0003c6aa1"
+    sha256 "72ae93f8d4afc607122d00cfcbacaa8daeab93731ac2c4931c2227338269bc7b"
   else
     url "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-#{version}-darwin-386.zip"
-    sha256 "c7bd3ce01b8a9c9c8c4ee9c14683e96c59bd5d7d6d6f6d1a516c67ca8e7cfe3a"
+    sha256 "08e986055bb37f60c80a6dcd9b51ffa1a09ddebfd20d0bfcfb0f8c4c09fbeb39"
   end
 
   bottle :unneeded
