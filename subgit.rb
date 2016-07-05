@@ -1,8 +1,8 @@
 class Subgit < Formula
   desc "SVN to Git migration tool"
   homepage "http://subgit.com"
-  url "http://old.subgit.com/download/subgit-3.0.0.zip"
-  sha256 "60e8859f57008262fc9af4e9913b85782797237ccbefd5d87a09f8f113b73d23"
+  url "http://old.subgit.com/download/subgit-3.2.0.zip"
+  sha256 "1df8f20e6d4005fd19a82d2bd9fa9ade2383214c0ddebd9136d7166b89fdc973"
 
   bottle :unneeded
 
