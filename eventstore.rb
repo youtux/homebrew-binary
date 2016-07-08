@@ -1,8 +1,8 @@
 class Eventstore < Formula
   desc "functional database with complex event processing"
   homepage "http://geteventstore.com"
-  url "http://download.geteventstore.com/binaries/EventStore-OSS-Mac-v3.0.4.tar.gz"
-  sha256 "7ac526464ef1423b93519cd0d5d61985b880e4412d93c07bbedb42f121a8900a"
+  url "http://download.geteventstore.com/binaries/EventStore-OSS-MacOSX-v3.7.0.tar.gz"
+  sha256 "e5902899d45aca6414fae01fff152ddc2df1495ad29d36ea3bcffbe33025e396"
 
   bottle :unneeded
 
@@ -14,7 +14,7 @@ class Eventstore < Formula
     (bin/"eventstore").write <<-EOS.undent
       #!/bin/sh
       cd "#{prefix}"
-      exec "#{prefix}/clusternode" "$@"
+      exec "#{prefix}/run-node.sh" "$@"
     EOS
 
     (bin/"eventstore-testclient").write <<-EOS.undent
@@ -24,7 +24,6 @@ class Eventstore < Formula
   end
 
   test do
-    system "#{bin}/eventstore", "--version"
-    system "#{bin}/eventstore --mem-db & sleep 3; pid=$!; #{bin}/eventstore-testclient --command wrfl; #{bin}/eventstore-testclient --command rdfl; kill $pid"
+    assert_match  /#{version}/, shell_output("#{bin}/eventstore --version")
   end
 end
